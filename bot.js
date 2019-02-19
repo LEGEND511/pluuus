@@ -1,7 +1,8 @@
 const Discord = require('discord.js');
 const Canvas = require('canvas')
 const client = new Discord.Client();
-const prefix = '+';
+const giphy = require('giphy-api')();    
+cconst prefix = '+';
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
